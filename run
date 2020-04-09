@@ -1,0 +1,17 @@
+cop()
+        {
+        sshpass -p  'vagrant' ssh -o StrictHostKeyChecking=no vagrant@192.168.56.$1
+        }
+
+rms()
+     {
+     docker ps -qa | xargs docker stop
+     docker ps -qa | xargs docker rm
+     }
+
+
+alias d='docker'
+export PATH="/root/.ebcli-virtual-env/executables:$PATH"
+export PATH=/maven1/bin:/java/bin:$PATH
+alias k='kubectl'
+alias keys="cat ~/.aws/credentials  | grep aws  | sed -e 's/\s//g' -e 's/.*/export &/g' | bash"
