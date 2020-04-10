@@ -16,7 +16,7 @@ export PATH=/maven1/bin:/java/bin:$PATH
 alias k='kubectl'
 alias keys="cat ~/.aws/credentials  | grep aws  | sed -e 's/\s//g' -e 's/.*/export &/g' | bash"
 
-( grep -i expandtab ~/.vimrc ) || {
+( grep -i expandtab ~/.vimrc ) > /dev/null 2>&1 || {
 cat <<-EOH >> ~/.vimrc
 syntax enable
 
