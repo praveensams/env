@@ -1,3 +1,4 @@
+#ENV apply
 cop()
         {
         sshpass -p  'vagrant' ssh -o StrictHostKeyChecking=no vagrant@192.168.56.$1
