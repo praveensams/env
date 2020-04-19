@@ -10,6 +10,11 @@ rms()
      docker ps -qa | xargs docker rm
      }
 
+exits()
+        {
+        history -a 
+        echo "syning"
+        }
 
 alias d='docker'
 export PATH="/root/.ebcli-virtual-env/executables:$PATH"
@@ -45,3 +50,5 @@ set showmatch
 let python_highlight_all = 1
 EOH
 }
+
+trap exits EXIT
