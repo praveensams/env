@@ -57,3 +57,5 @@ tsh()
     {
     ssh -i ~/.ssh/id_rsa $*
     }
+ alias t=terraform
+ alias h=helm
