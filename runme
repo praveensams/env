@@ -29,7 +29,7 @@ syntax enable
 " show line numbers
 
 " set tabs to have 4 spaces
-set ts=4
+set ts=2
 
 " indent when moving to the next line while writing code
 set autoindent
@@ -38,7 +38,7 @@ set autoindent
 set expandtab
 
 " when using the >> or << commands, shift lines by 4 spaces
-set shiftwidth=4
+set shiftwidth=2
 
 " show a visual line under the cursor's current line
 set cursorline
