@@ -88,3 +88,10 @@ gm ()
     git config credential.helper store;                                   
     git config credential.helper 'cache --timeout=360000'                 
 }  
+
+cm ()
+{
+    git commit -am "$(date)";
+    git push origin master
+}
+
